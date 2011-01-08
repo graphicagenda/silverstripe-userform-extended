@@ -1,7 +1,7 @@
 <?php 
-class  GetStates {
+class  USStatesList{
 	
-	protected static $us_stateCodes = array(
+	protected static $us_state_codes = array(
 	'None Selected' => "Select",
 	'Outside US' => "Outside US",
 	'AL' => "Alabama",
@@ -69,13 +69,12 @@ class  GetStates {
 	'WY' => "Wyoming"
 	);
 
-	/** 
+	/**
 	 * Returns an array of  State Names
 	 */
-	static function getStateDropDown() {
-		$dropdown = GetStates::$us_stateCodes;
+	static function USStatesDropdown() {
+		$dropdown = USStatesList::$us_state_codes;
 		asort($dropdown);
 		return $dropdown;
 	}
 }
-?>

@@ -7,7 +7,7 @@
  * @package userforms
  */
 
-class  EditableCountryDropDown extends EditableFormField  {
+class  EditableCountryDropdown extends EditableFormField  {
 	
 		static $singular_name = 'Country Field';
 		
@@ -20,7 +20,7 @@ class  EditableCountryDropDown extends EditableFormField  {
 	}
 	
 	function getFormField() {
-			$labelField = new DropdownField($this->Name, $this->Title, GetCountries::getCountryDropDownUS());
+			$labelField = new DropdownField($this->Name, $this->Title, CountryList::CountryDropdownUS());
 			$labelField->addExtraClass('FormState'); 
 			return $labelField;
 		}

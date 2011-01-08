@@ -1,12 +1,12 @@
 <?php 
-class  GetCountries Extends Geoip {
+class  CountryList{
 	
 	public static $default_country_code = false;
 
 	/** 
-	 * Returns an array of ISO Country Codes -> Country Names
+	 * Returns an array of Custom Country Codes -> Country Names
 	 */
-	 	protected static $iso_get_countryCodes = array(
+	 	protected static $country_codes = array(
 		'US' => "United States",
 		'CA' => "Canada",
 		'GB' => "United Kingdom",
@@ -256,8 +256,8 @@ class  GetCountries Extends Geoip {
 		'ZW' => "Zimbabwe"
 	);
 	
-	static function getCountryDropDownUS() {
-		$dropdown = GetCountries::$iso_get_countryCodes;
+	static function CountryDropdownUS() {
+		$dropdown = CountryList::$country_codes;
 		unset($dropdown['A1']);
 		unset($dropdown['A2']);
 		unset($dropdown['A3']);	
