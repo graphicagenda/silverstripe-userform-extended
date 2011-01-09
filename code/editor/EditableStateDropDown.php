@@ -15,9 +15,17 @@ class  EditableStateDropdown extends EditableFormField  {
 
 		
 		function getFormField() {
-			$labelField = new DropdownField($this->Name, $this->Title, USStatesList::USStatesDropdown());
-			$labelField->addExtraClass('FormState'); 
-			return $labelField;
-		}
+				$labelField = new DropdownField($this->Name, $this->Title, USStatesList::USStatesDropdown());
+				$labelField->addExtraClass('FormState'); 
+				return $labelField;
+			}
+			
+		/**
+		 * call an image for the field
+		 * 
+		 */	
+		function getIcon(){
+				return 'userform_custom_fields/images/editablestatedropdown.png';
+			}
 
 	}

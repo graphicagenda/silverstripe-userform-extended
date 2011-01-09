@@ -13,16 +13,23 @@ class  EditableCountryDropdown extends EditableFormField  {
 		
 		static $plural_name = 'Country Fields';
 
-	public function getFieldConfiguration() {
-			$options = parent::getFieldConfiguration();
+		public function getFieldConfiguration() {
+				$options = parent::getFieldConfiguration();
 				$options->push(new TextField("Fields[$this->ID][CustomSettings][Default]", _t('EditableFormField.FIELDONDEFAULT', 'Default?'), $this->getSetting('Default')));
-			return $options;
-	}
+				return $options;
+			}
 	
-	function getFormField() {
-			$labelField = new DropdownField($this->Name, $this->Title, CountryList::CountryDropdownUS());
-			$labelField->addExtraClass('FormState'); 
-			return $labelField;
-		}
+		function getFormField() {
+				$labelField = new DropdownField($this->Name, $this->Title, CountryList::CountryDropdownUS());
+				$labelField->addExtraClass('FormState'); 
+				return $labelField;
+			}
+	/**
+	 * call an image for the field
+	 * 
+	 */	
+		function getIcon() {
+				return 'userform_custom_fields/images/editablecountrydropdown.png';
+			}
 
 	}
