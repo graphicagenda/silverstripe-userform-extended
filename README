@@ -1,1 +1,41 @@
-TEST
+###############################################
+WP-E-commerce-Custom-Shipping-Weight-Tables
+For WPEC - 3.7.8+
+###############################################
+
+01-08-2011
+These files get placed in your plugins folder.
+
+
+Maintainer Contact
+-----------------------------------------------
+Greg Kerstin <hello (at) graphicagenda (dot) com>
+WP E-Commerce is the WordPress designer's choice shopping cart solution.
+Go to http://getshopped.com for more info.
+
+
+Requirements
+-----------------------------------------------
+WP E-Commerce Plugin
+
+
+Installation Instructions
+-----------------------------------------------
+1. Place in your plugins directory
+2. Activate new plugins
+3. Go into Shop>Settings>Shipping
+4. Activate shipping countries
+
+Fixes
+-----------------------------------------------
+
+
+Known issues
+-----------------------------------------------
+Needs to go in main plugin directory to get noticed by e-commerce. 
+
+
+To Do
+-----------------------------------------------
+
+Make a control page outside of WP E-Commerce, to view this set of plugins.

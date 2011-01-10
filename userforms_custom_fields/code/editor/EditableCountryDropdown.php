@@ -29,7 +29,7 @@ class  EditableCountryDropdown extends EditableFormField  {
 	 * 
 	 */	
 		function getIcon() {
-				return 'userform_custom_fields/images/editablecountrydropdown.png';
+				return 'userforms_custom_fields/images/' . strtolower($this->class) . '.png';
 			}
 
 	}

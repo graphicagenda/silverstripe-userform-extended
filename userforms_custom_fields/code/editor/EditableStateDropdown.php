@@ -25,7 +25,7 @@ class  EditableStateDropdown extends EditableFormField  {
 		 * 
 		 */	
 		function getIcon(){
-				return 'userform_custom_fields/images/editablestatedropdown.png';
+				return 'userforms_custom_fields/images/' . strtolower($this->class) . '.png';
 			}
 
 	}

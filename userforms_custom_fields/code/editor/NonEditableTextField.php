@@ -31,7 +31,7 @@ class  NonEditableTextField extends EditableTextField  {
 		 * 
 		 */	
 		function getIcon() {
-				return 'userform_custom_fields/images/noneditabletextfield.png';
+				return 'userforms_custom_fields/images/' . strtolower($this->class) . '.png';
 			}
 
 	}
