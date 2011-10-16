@@ -1,10 +1,12 @@
 ###############################################
-WP-E-commerce-Custom-Shipping-Weight-Tables
-For WPEC - 3.7.8+
+Userform Extended
 ###############################################
 
+10-16-2011
+I learned Git last month. My first commit was a learning experience.
+
 01-08-2011
-These files get placed in your plugins folder.
+Initial Commit
 
 
 Maintainer Contact
@@ -16,15 +18,13 @@ Go to http://getshopped.com for more info.
 
 Requirements
 -----------------------------------------------
-WP E-Commerce Plugin
+Silverstripe Userform Module
 
 
 Installation Instructions
 -----------------------------------------------
-1. Place in your plugins directory
-2. Activate new plugins
-3. Go into Shop>Settings>Shipping
-4. Activate shipping countries
+1. Place in your Silverstripe installation
+2. Find new editor fields in your userform
 
 Fixes
 -----------------------------------------------
@@ -32,10 +32,10 @@ Fixes
 
 Known issues
 -----------------------------------------------
-Needs to go in main plugin directory to get noticed by e-commerce. 
+Some icons are incorrect
 
 
 To Do
 -----------------------------------------------
-
-Make a control page outside of WP E-Commerce, to view this set of plugins.
+Extend userforms with a theme
+CSS tweaks
